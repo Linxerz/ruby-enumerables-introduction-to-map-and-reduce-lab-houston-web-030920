@@ -22,8 +22,7 @@ def reduce_to_total(source_array,starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  source_array.inject(0){|i| if i!= true then false else true end}
-    pp source_array
+  source_array.all?(0)
 end
 
 def reduce_to_any_true(source_array)
