@@ -22,8 +22,10 @@ def reduce_to_total(source_array,starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  source_array.all?(0)
-  pp source_array
+  if source_array.any?{|e| e == false}
+    return false
+  end
+  true
 end
 
 def reduce_to_any_true(source_array)
