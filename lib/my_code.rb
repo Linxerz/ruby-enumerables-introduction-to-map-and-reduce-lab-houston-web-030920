@@ -1,4 +1,6 @@
 # My Code here....
+
+require 'pp'
 def map_to_negativize(source_array)
   source_array.map{|i| i = i*-1}
 end
@@ -21,4 +23,5 @@ end
 
 def reduce_to_all_true(source_array)
   source_array.inject(0){|i| if i!= true then false else true end}
+    pp source_array
 end
