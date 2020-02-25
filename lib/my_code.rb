@@ -15,7 +15,7 @@ def map_to_square(source_array)
   source_array.map{|i| i ** 2}
 end
 
-def reduce_to_total(source_array,starting_point = 0)
+def reduce_to_total(source_array,starting_point = 1)
   source_array.reduce(starting_point, :+)
 end
 
